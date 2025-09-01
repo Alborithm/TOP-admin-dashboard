@@ -152,3 +152,41 @@ svg {
 main h2 {
   font-size: 1.25rem;
 }
+
+.project-card {
+  background-color: var(--white);
+  border-radius: 10px;
+
+  height: 200px;
+
+  display: grid;
+  grid-template-columns: 10px auto;
+}
+
+.orange-line {
+  background-color: var(--secondary-main);
+  grid-column: 1 / 2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.project-card-contents {
+  grid-column: 2 / 3;
+
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-contents p {
+  flex-grow: 1;
+}
+
+.project-icon-container {
+  align-self: flex-end;
+
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
