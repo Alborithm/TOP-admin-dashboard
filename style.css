@@ -80,6 +80,11 @@ svg {
   flex-grow: 1;
 }
 
+.search-container img {
+  height: 32px;
+  border-radius: 16px;
+}
+
 .welcome-container {
   display: flex;
   flex-direction: row;
@@ -91,6 +96,11 @@ svg {
 
 .welcome-container div {
   flex-grow: 1;
+}
+
+.welcome-container img {
+  height: 50px;
+  border-radius: 25px;
 }
 
 .welcome-container h1 {
