@@ -9,6 +9,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 1rem;
 }
 
 body {
@@ -24,8 +25,8 @@ body {
 
   display: grid;
 
-  grid-template-columns: 150px auto;
-  grid-template-rows: 100px auto;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 300px auto;
 
 }
 
@@ -73,7 +74,32 @@ svg {
 .welcome-container {
   display: flex;
   flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
 
-  border: 1px solid red;
+.welcome-container div {
+  flex-grow: 1;
+}
+
+.welcome-container h1 {
+  font-size: 1.5rem;
+}
+
+.welcome-container p {
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.welcome-container button {
+  background-color: var(--primary-main);
+  color: var(--white);
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 90px;
+
+  font-size: .85rem;
+  font-weight: 500;
 }
 
