@@ -26,7 +26,7 @@ body {
   display: grid;
 
   grid-template-columns: 200px auto;
-  grid-template-rows: 300px auto;
+  grid-template-rows: 150px auto;
 
 }
 
@@ -36,16 +36,23 @@ nav {
 
   background-color: var(--primary-main);
   color: var(--white);
+
+  z-index: 1;
 }
 
 header {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
 
+  height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
   background-color: var(--white);
+
+  padding: 20px 40px;
+  box-shadow: 3px 3px 10px 5px darkgrey;
 }
 
 main {
@@ -53,6 +60,8 @@ main {
   grid-column: 2 / 3;
 
   background-color: var(--primary-background);
+
+  z-index: -1;
 }
 
 svg {
@@ -63,7 +72,7 @@ svg {
   display: flex;
   flex-direction: row;
 
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
   gap: 10px;
 }
 
@@ -74,8 +83,10 @@ svg {
 .welcome-container {
   display: flex;
   flex-direction: row;
+  height: 100%;
   gap: 15px;
   align-items: center;
+
 }
 
 .welcome-container div {
