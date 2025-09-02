@@ -189,7 +189,7 @@ main div h2 {
 }
 
 .project-card-contents p {
-  flex-grow: 1;
+  /* flex-grow: 1; */
 
   /* height: 200px; */
   width: 70%;
@@ -198,9 +198,11 @@ main div h2 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  line-height: 1.2rem;
 }
 
 .project-icon-container {
+  margin-top: auto;
   align-self: flex-end;
 
   display: flex;
