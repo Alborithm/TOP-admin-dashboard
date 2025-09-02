@@ -209,3 +209,30 @@ main div h2 {
   flex-direction: row;
   gap: 30px;
 }
+
+.nav-list {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-rows: repeat(10, 3rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.25rem;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.nav-list li svg {
+  fill: white;
+  margin-bottom: -.2rem;
+}
+
