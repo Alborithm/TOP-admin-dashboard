@@ -240,3 +240,18 @@ main div h2 {
   margin-bottom: -.2rem;
 }
 
+.icon-nav {
+  margin: 20px 20px;
+}
+
+.icon-nav span{
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.icon-nav svg {
+  fill: var(--white);
+  height: 2.5rem;
+  margin-bottom: -0.5rem;
+}
