@@ -37,7 +37,7 @@ nav {
   background-color: var(--primary-main);
   color: var(--white);
 
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 header {
@@ -61,7 +61,7 @@ main {
 
   background-color: var(--primary-background);
 
-  /* z-index: -1; */
+  z-index: -1;
 
   display: grid;
   grid-template-columns: 5fr 3fr;
@@ -253,5 +253,5 @@ main div h2 {
 .icon-nav svg {
   fill: var(--white);
   height: 2.5rem;
-  margin-bottom: -0.5rem;
+  margin-bottom: -0.5rem; /* centering the svg with the icon */
 }
