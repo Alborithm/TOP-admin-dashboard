@@ -87,6 +87,8 @@ svg {
 
 .search-container input{
   flex-grow: 1;
+  font-family: inherit;
+  padding: .1rem 1rem;
 }
 
 .search-container a img {
