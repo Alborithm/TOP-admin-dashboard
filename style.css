@@ -38,12 +38,14 @@ nav {
   background-color: var(--primary-main);
   color: var(--white);
 
-  z-index: 1;
+  z-index: 100;
 }
 
 header {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+
+  z-index: 10;
 
   /* height: 100%; */
   display: flex;
@@ -61,8 +63,6 @@ main {
   grid-column: 2 / 3;
 
   background-color: var(--primary-background);
-
-  z-index: -1;
 
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -89,13 +89,20 @@ svg {
   flex-grow: 1;
 }
 
-.search-container img {
+.search-container a img {
   height: 24px;
   border-radius: 16px;
 }
 
-.search-container span {
+.search-container a span {
   font-weight: bold;
+  margin-left: 5px;
+}
+
+.search-container a{
+  text-decoration: none;
+  color: black;
+  display: flex;
 }
 
 .welcome-container {
@@ -229,6 +236,9 @@ main div h2 {
 
 .nav-list li a {
   text-decoration: none;
+}
+
+.nav-list li a span {
   color: var(--white);
   font-size: 1.25rem;
   margin-left: 10px;
@@ -286,6 +296,11 @@ main div h2 {
   box-shadow: var(--card-shadow);
 }
 
+.trending-container div a {
+  color: black;
+  text-decoration: none;
+}
+
 .trending-item {
   padding: 10px;
 }
@@ -303,4 +318,8 @@ main div h2 {
 
 button:hover {
   cursor: pointer;
+}
+
+.clickable-icon:hover {
+  cursor:pointer
 }
